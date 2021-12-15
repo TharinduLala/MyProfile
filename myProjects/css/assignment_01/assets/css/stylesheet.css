@@ -1,0 +1,127 @@
+/*/////////////////////////////////////////for large rectangles/////////////////////////////////*/
+.largeRectangle {
+    z-index: 10;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+}
+#redRect {
+    background-color:red;
+    top: 0;
+    left: 0;
+}
+#greenRect {
+    background-color:darkgreen;
+    top: 0;
+    right: 0;
+}
+#orangeRect {
+    background-color:orange;
+    bottom: 0;
+    left: 0;
+}
+#pinkRect {
+    background-color:deeppink;
+    bottom: 0;
+    right: 0;
+}
+/*/////////////////////////////////////////for four circles with square////////////////////////////////*/
+.largeCircle {
+    position: absolute;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius:200px;
+}
+.smallSquare{
+    position: absolute;
+    z-index: 200;
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
+}
+#topLeftCircle {
+    top: calc(25% - 100px);
+    left: calc(25% - 100px);
+}
+#topRightCircle {
+    top: calc(25% - 100px);
+    left: calc(75% - 100px);
+}
+#bottomLeftCircle {
+    top: calc(75% - 100px);
+    left: calc(25% - 100px);
+}
+#bottomRightCircle {
+    top: calc(75% - 100px);
+    left: calc(75% - 100px);
+}
+/*////////////////////////////////////////////for center square with circle///////////////////////////*/
+.largeSquare{
+    position: absolute;
+    z-index: 100;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    top:calc(50% - 100px);
+    left: calc(50% - 100px);
+}
+.smallCircle{
+    position: absolute;
+    z-index: 200;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+    border-radius: 100px;
+}
+/*///////////////////////////////////////////for quarter circle/////////////////////////////////////////*/
+.quarterCircle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    z-index: 100;
+}
+#bottomRightQuarter {
+    border-radius:100px 0 0 0;
+    bottom: 0;
+    right: 0;
+}
+#bottomLeftQuarter {
+    border-radius:0 100px 0 0;
+    bottom: 0;
+    left: 0;
+}
+#topLeftQuarter {
+    border-radius:0 0 100px 0;
+    top: 0;
+    left: 0;
+}
+#topRightQuarter {
+    border-radius:0 0 0 100px;
+    top: 0;
+    right: 0;
+}
+/*//////////////////////////////////////////for half circle//////////////////////////////////////////////////*/
+.semiCircle{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color:white;
+    z-index: 100;
+}
+#bottomHalf {
+    bottom: 0;
+    left: calc(50% - 100px);
+    border-radius:100px 100px 0 0;
+}
+#topHalf {
+    top: 0;
+    left: calc(50% - 100px);
+    border-radius:0 0 100px 100px;
+}
