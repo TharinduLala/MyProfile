@@ -1,0 +1,49 @@
+body {
+    background-color: blue;
+}
+
+div {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: grey;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+div>h2 {
+    position: absolute;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 36px;
+}
+
+div::after {
+    content: " ";
+    position: absolute;
+    border: white 15px solid;
+    border-top: rgb(255, 0, 0) 15px solid;
+    border-radius: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition-duration: 500ms;
+}
+
+div:hover::after {
+    transform: rotate(360deg);
+    transition-property: all;
+    transition-duration: 500ms;
+    cursor: pointer;
+}

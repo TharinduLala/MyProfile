@@ -1,0 +1,84 @@
+section {
+    position: relative;
+    width: 200px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    right: 140px;
+    top: 175px;
+}
+section > div {
+    left: 0;
+    height: 60px;
+    background-color: #8e44ad;
+    color: white;
+    box-shadow: 1px 1px 5px 1px black;
+    position: relative;
+    transition: all 1s;
+}
+section > div > p {
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    left: 20px;
+    font-size: 24px;
+}
+section > div > i {
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+}
+
+section > div:hover {
+   left: 140px;
+   cursor: pointer;
+   transition: all 1s;
+}
+
+/* section {
+    width: 228px;
+    height: 492px;
+    top: 91px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right: 172px;
+}
+
+section > div {
+    left: 0;
+    height: 40px;
+    position: relative;
+    background: #1d33ab;
+    color: white;
+    box-shadow: 1px 2px 3px 2px #3a483b;
+    transition: all 2s;
+}
+
+section > div > p {
+    margin: 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+section > div > i {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 28px;
+}
+
+section > div:hover {
+    background: green;
+    left: 172px;
+    cursor: pointer;
+    transition: all 2s;
+} */

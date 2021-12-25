@@ -1,186 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Tharindu Lalantha</title>
     <link href="assets/images/wlogo.png" rel="icon">
     <link rel="stylesheet" href="assets/css/normalize.css">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
-    <meta  content="Tharindu Lalantha's personal website" name="description">
-    <meta content="Tharindu Lalantha,software engineer" name="keywords" >
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Tharindu Lalantha's personal website" name="description">
+    <meta content="Tharindu Lalantha,software engineer" name="keywords">
 </head>
+
 <body>
-<header>
-<!--    for navigation menu-->
-    <nav>
-        <div>
-            <a>Home</a>
-            <a>About me</a>
-            <a>Skills</a>
-            <a>Projects</a>
-            <a>Contact me</a>
-        </div>
-
-    </nav>
-</header>
-
-<main>
-    <!--for welcome -->
-    <section style="background-color: black">
-        <!--for logo-->
-        <section >
-            <img src="assets/images/wlogo.png"alt="logo"width="200"height="200">
-        </section>
-        <!--    for heading-->
-        <section>
-            <div>
-                <img src="assets/icons/hello.png"alt="hello"width="70"height="70">
-                <h4 style="color: white">Hi,I am</h4>
+    <header>
+        <img src="assets/images/wlogo.png" alt="logo">
+        <ul>
+            <li> Home</li>
+            <li>About me</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Contact me</li>
+        </ul>
+    </header>
+    <main>
+        <section id="welcome">
+            <video id="coverVid" src="assets/videos/covervideo.mp4" muted loop autoplay> </video>
+            <div id="profileImg"><img src="assets/images/profilePic.jpg" alt="profilePic"></div>
+            <div id="socialLogo">
+               <a href="https://www.facebook.com/kad.tl.5" target="_blank"> <i class="fab fa-facebook-square"></i></a>
+               <a href="https://github.com/TharinduLala" target="_blank"> <i class="fab fa-github-square"></i></a>
+                
             </div>
-            <h2 style="color: white">THARINDU</h2>
-            <h3 style="color: white">LALANTHA</h3>
-            <h5 style="color: white">Software Engineering Student</h5>
+            <img  id="waveHand" src="assets/icons/hello.png" alt="hello">
+            <div id="textContent">
+                <p>Hi,I am</p>
+                <p>THARINDU</p>
+                <p>LALANTHA</p>
+                <p>Software Engineering Student</p>
+            </div>
+            
         </section>
-        <!--for social logos-->
-        <section>
-            <img src="assets/icons/facebook.png"alt="facebook"width="100" height="100">
-            <img src="assets/icons/github.png"alt="facebook"width="100" height="100">
+        <section id="aboutMe">
+            <h1 class="headTitle">ABOUT ME</h1>
+            <img class="backgroundImg" src="assets/images/background.jpg" alt="background">
         </section>
-    </section>
-
-
-    <!--for about me-->
-    <section>
-        <h1>ABOUT ME</h1>
-        <div>
-            <p style="text-align: center">
-                I am Tharindu Lalantha. I live in Panadura,Sri Lanka.<br>I studied physical science for A / L and I am
-                currently studying software engineering with<br>IJSE and I have a keen interest and passion for that
-                studies.<br><br>
-                I am passionate about the subject of IT and work hard with enthusiasm and dedication for it.<br>In this
-                field where "productivity" is most important in personal communication, I have the<br>interest and
-                ability to identify that need and develop relevant skills.<br><br>
-                I believe that my experience as a Presidential Scout and that Scout life has enhanced<br>my ability to
-                associate with the community as well as to face challenges successfully.</p>
-        </div>
-        <section>
-            <img src="assets/images/profilePic.jpg" alt="profile" width="600" height="600" style="border-radius:1000px">
+        <section id="timeLine">
+            <h1 class="headTitle">Education,Work Experience & Extra Activities</h1>
+            <img class="backgroundImg" src="assets/images/background.jpg" alt="background">
         </section>
-    </section>
-
-    <!--for education and working exp-->
-    <section>
-        <h1>Education,Work Experience<br>
-            & Extra Activities</h1>
-        <section></section>
-    </section>
-
-    <!--for skills-->
-    <section>
-        <h1>SKILLS</h1>
-        <h5>-- Technologies I have already used --</h5>
-        <div><img src="assets/icons/java.jpg"alt="java"width="300"></div>
-        <div><img src="assets/icons/javafx.png"alt="javafx"width="300"></div>
-        <div><img src="assets/icons/mysql.png"alt="mysql"width="300"></div>
-        <div><img src="assets/icons/hibernate.jpg"alt="hibernate"width="300"></div>
-        <div><img src="assets/icons/css.jpg"alt="css"width="300"></div>
-        <div><img src="assets/icons/html.png"alt="html"width="300"></div>
-        <div><img src="assets/icons/jasper.png"alt="jasperSoft"width="300"></div>
-        <div><img src="assets/icons/figma.jpg"alt="figma"width="300"></div>
-    </section>
-
-    <!--for projects-->
-    <section>
-        <h1>PROJECTS</h1>
-        <h5>-- Some projects I have done --</h5>
-        <section>
-            <div><img src="assets/images/parkingSystem.png" alt="parkingSystem"width="600"></div>
-            <div><img src="assets/images/posSystem.png" alt="posSystem"width="600"></div>
-            <div><img src="assets/images/vehicleRental.png" alt="vehicleRentalSystem"width="600"></div>
-            <div><img src="assets/images/roomReservation.png" alt="roomReservationSystem"width="600"></div>
+        <section id="skills">
+            <h1 class="headTitle">SKILLS</h1>
+            <img class="backgroundImg" src="assets/images/background.jpg" alt="background">
         </section>
-    </section>
-
-    <!--for contact-->
-   <section style="background-color: black">
-       <h4 style="color: white">Have a question or want to work together?</h4>
-       <h1 style="color: white">CONTACT ME</h1>
-       <section>
-           <form>
-               <fieldset>
-                   <label for="txtName">Your Name</label>
-                   <input id="txtName" type="text" placeholder="Your Name"><br><br>
-
-                   <label for="txtEmail">Your Email</label>
-                   <input id="txtEmail" type="text" placeholder="Your Email"><br><br>
-
-                   <label for="txtSubject">Subject</label>
-                   <input id="txtSubject" type="text" placeholder="Subject"><br><br>
-
-                   <label for="txtMessage">Message</label>
-                   <textarea id="txtMessage" placeholder="Message"></textarea><br><br>
-
-                   <button>Send Message</button>
-               </fieldset>
-           </form>
-       </section>
-       <section>
-           <address>
-               <img src="assets/icons/location.png"width="40" height="40">
-               <p style="color: white">
-                   30, 1stLane, Madahena, Hirana,<br>Panadura,Sri Lanka.
-               </p>
-           </address>
-
-           <address>
-               <img src="assets/icons/phone.png"width="40" height="40">
-               <a target="_blank" href="tel:+94715463515"style="color: white">+94715463515</a>
-           </address>
-           <address>
-               <img src="assets/icons/gmail.png"width="40" height="40">
-               <a href="mailto:lalnthatharindu@gmail.com"target="_blank" style="color: white">lalnthatharindu@gmail.com</a>
-           </address>
-           <address>
-               <img src="assets/icons/whatsapp.png"width="40" height="40">
-               <a target="_blank" href="https://wa.me/94715463515" style="color: white">+94715463515</a>
-           </address>
-           <address>
-<<<<<<< HEAD
-            <img src="assets/icons/telegram.png"width="40" height="40">
-            <a target="_blank" href="https://telegram.me/TharinduLala" style="color: white">+94715463515</a>
-=======
-               <img src="assets/icons/telegram.png"width="40" height="40">
-               <a target="_blank" href="https://telegram.me/TharinduLala" style="color: white">+94715463515</a>
->>>>>>> 7b996583e064edb3704322b6aee74171511ac698
-           </address>
-           <address>
-               <map name="facebook">
-                   <area shape="circle" coords="50,50,50,50" href="https://www.facebook.com/kad.tl.5" target="_blank">
-               </map>
-               <img usemap="#facebook" src="assets/icons/facebook.png"width="50" height="50"alt="facebook">
-           </address>
-           <address>
-               <map name="github">
-                   <area shape="circle" coords="50,50,50,50" href="https://github.com/TharinduLala" target="_blank">
-               </map>
-               <img usemap="#github" src="assets/icons/github.png"width="50" height="50"alt="github">
-           </address>
-           <address>
-               <map name="linkedIn">
-                   <area shape="default" coords="50,50,50,50" href="https://www.linkedin.com/in/tharindu-lalantha/" target="_blank">
-               </map>
-               <img usemap="#linkedIn" src="assets/icons/linkedin.png"width="50" height="50"alt="linkedIn">
-           </address>
-       </section>
-   </section>
-
-</main>
-
-<footer>
-    <hr>
-    <div>
-        <img src="assets/images/myImage.jpg"alt="myImage" width="50"height="50"style="border-radius: 100px">
-        <p style="text-align: center">developed by Tharindu Lalantha</p>
-    </div>
-</footer>
+        <section id="projects">
+            <h1 class="headTitle">PROJECTS</h1>
+            <img class="backgroundImg" src="assets/images/background.jpg" alt="background">
+        </section>
+        <section id="contact">
+        </section>
+    </main>
+    <footer>
+        <img src="assets/images/myImage.jpg" alt="myImage">
+        <p>developed by Tharindu Lalantha</p>
+    </footer>
 </body>
+
 </html>

@@ -1,5 +1,3 @@
 # This is My Profile.
-
-##Institute of Software Engineering.
-![Image](assets/images/cover.jpg)
-![Image of Institute](assets/images/ijse.png)
+<video style="width: 500px ;" id="coverVid" src="assets/videos/sample.mp4" muted loop autoplay> </video>
+<p>This is front page preview</p>

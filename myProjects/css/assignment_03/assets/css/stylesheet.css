@@ -1,0 +1,87 @@
+
+body>section {
+    position: relative;
+    height: 300vh
+    
+}
+
+.fix_Circle {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+#largeCircle {
+    border: solid 16px gray;
+    width: 230px;
+    height: 230px;
+    border-radius: 230px;
+}
+
+#smallCircle {
+    border: solid 16px red;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+#purpleCircle {
+    position: absolute;
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    top: 265px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#blueCircle {
+    position: absolute;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#pinkCircle {
+    position: absolute;
+    background-color: rgb(231, 116, 87);
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    left: 0;
+    bottom: 265px;
+    right: 0;
+    margin: auto;
+    
+}
+
+body>section>div{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+}
+body>section>div:nth-child(3)>p{
+    position: relative;
+    top: 55px;
+}
+body>section>div:nth-child(4)>p{
+    position: relative;
+    top: 55px;
+}
+body>section>div:nth-child(5)>p{
+    position: relative;
+    top: 20px;
+}
