@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 
 
-
+/* -----------------------------------------nav bar----------------------------------------- */
 header {
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 50px;
     width: 100%;
     z-index: 1;
 }
@@ -56,12 +56,14 @@ body>main>section {
     height: 100vh;
 }
 
+/* -----------------------------------------welcome page----------------------------------------- */
 #coverVid {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-#waveHand{
+
+#waveHand {
     position: absolute;
     top: 225px;
     left: 70px;
@@ -72,31 +74,37 @@ body>main>section {
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
-@keyframes wave{
-    0%,25%{
+
+@keyframes wave {
+    0%, 25% {
         transform: rotate(-20deg);
     }
-    25%,50%{
+
+    25%, 50% {
         transform: rotate(20deg);
     }
-    50%,75%{
+
+    50%, 75% {
         transform: rotate(20deg);
     }
-    75%,100%{
+
+    75%, 100% {
         transform: rotate(-20deg);
     }
 
 }
-#textContent> p{
+
+#textContent>p {
     color: white;
     font-family: 'Ubuntu', sans-serif;
     z-index: 2;
     position: relative;
     display: block;
-   width: fit-content;
-   margin: 0;
+    width: fit-content;
+    margin: 0;
 }
-#textContent{
+
+#textContent {
     top: 280px;
     left: 175px;
     z-index: 1;
@@ -104,72 +112,183 @@ body>main>section {
     width: fit-content;
     height: fit-content;
 }
-#textContent p:nth-child(1){
+
+#textContent p:nth-child(1) {
     font-size: 48px;
     padding-bottom: 15px;
 }
-#textContent p:nth-child(2){
+
+#textContent p:nth-child(2) {
     font-size: 90px;
 }
-#textContent p:nth-child(3){
+
+#textContent p:nth-child(3) {
     font-size: 70px;
 }
-#textContent p:nth-child(4){
+
+#textContent p:nth-child(4) {
     font-size: 24px;
     left: 186px;
     padding-top: 10px;
 }
 
-#socialLogo{
+#socialLogo {
     position: absolute;
     display: flex;
     width: fit-content;
     height: fit-content;
-    
     z-index: 1;
     right: 180px;
     bottom: 0px;
 }
 
-#socialLogo > a{
-    justify-content:space-between ;
+#socialLogo>a {
+    justify-content: space-between;
     font-size: 70px;
     color: white;
     margin: 15px;
 }
-#profileImg{
+
+#profileImg {
+    border-radius: 100%;
     position: absolute;
     width: fit-content;
     height: fit-content;
     right: 75px;
-    bottom:15%;
+    bottom: 15%;
+
+
 }
-#profileImg > img{
+
+#profileImg::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 100%;
+    border-top: 5px solid turquoise;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0%, 20% {
+        transform: rotate(72deg);
+    }
+
+    20%, 40% {
+        transform: rotate(144deg);
+    }
+
+    40%, 60% {
+        transform: rotate(216deg);
+    }
+
+    60%, 80% {
+        transform: rotate(288deg);
+    }
+
+    80%, 100% {
+        transform: rotate(360deg);
+    }
+}
+
+#profileImg>img {
     border-radius: 100%;
     width: 400px;
     height: auto;
 }
+
 .headTitle {
     position: absolute;
     width: fit-content;
     height: fit-content;
     left: 0;
     right: 0;
+    top: 15px;
     margin: auto;
     font-family: 'Bubbler One', sans-serif;
     font-size: 56px;
     color: white;
 }
 
-.backgroundImg {
-    width: 100%;
-    height: 100%;
+/* -----------------------------------------about me page----------------------------------------- */
+#aboutMe {
+    background-image: url('../../assets/images/background.jpg');
     object-fit: cover;
 }
 
+#aboutMe>div {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+}
 
+#aboutMe>div:nth-child(2) {
+    bottom: 5px;
+    left: 35px;
+}
 
+#aboutMe>div:nth-child(3) {
+    bottom: 225px;
+    right: 30px;
+}
 
+#aboutMe>div:nth-child(3) p {
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+}
+
+#btnDownloadCv {
+    position: absolute;
+    bottom: 130px;
+    right: 500px;
+    align-items: center;
+    background-color: transparent;
+    border: 5px solid white;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 45px;
+    width: 175px;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+#btnDownloadCv:hover {
+    transition: all .5s;
+    border-color: #06f;
+    color: #06f;
+    fill: #06f;
+}
+
+/* -----------------------------------------time line page----------------------------------------- */
+#timeLine {
+    background-image: url('../../assets/images/background.jpg');
+    object-fit: cover;
+}
+
+/* -----------------------------------------skills page----------------------------------------- */
+#skills {
+    background-image: url('../../assets/images/background.jpg');
+    object-fit: cover;
+}
+
+/* -----------------------------------------projects page----------------------------------------- */
+#projects {
+    background-image: url('../../assets/images/background.jpg');
+    object-fit: cover;
+}
+
+/* -----------------------------------------contact me page----------------------------------------- */
 #contact {
     height: 50vh;
     background-image: url('../../assets/images/footerCover.jpg');
@@ -177,6 +296,7 @@ body>main>section {
     bottom: 0;
 }
 
+/* -----------------------------------------footer----------------------------------------- */
 footer {
     position: relative;
     background-color: black;
@@ -193,6 +313,7 @@ footer>img {
     left: 0;
     margin: auto;
     z-index: 1;
+    border: white 1px solid;
 }
 
 footer>p {
