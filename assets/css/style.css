@@ -7,7 +7,7 @@
 header {
     position: fixed;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.8);
     height: 50px;
     width: 100%;
     z-index: 1;
@@ -33,11 +33,8 @@ header>ul {
     position: absolute;
     right: 30px;
     bottom: -10px;
-    font-size: 24px;
-    font-family: 'Bubbler One', sans-serif;
-    font-weight: bolder;
     list-style: none;
-    color: white;
+
 }
 
 header>ul>li {
@@ -45,7 +42,14 @@ header>ul>li {
     display: inline-block;
 }
 
-header>ul>li:hover {
+header>ul>li>a {
+    font-family: 'Bubbler One', sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 24px;
+}
+
+header>ul>li>a:hover {
     cursor: pointer;
     color: #00E676;
     font-size: 30px;
@@ -71,25 +75,18 @@ body>main>section {
     width: 100px;
     height: auto;
     animation-name: wave;
-    animation-duration: 2s;
+    animation-duration: 1s;
+    animation-direction: alternate;
     animation-iteration-count: infinite;
 }
 
 @keyframes wave {
-    0%, 25% {
-        transform: rotate(-20deg);
+    fom {
+        transform: rotate(0deg);
     }
 
-    25%, 50% {
+    to {
         transform: rotate(20deg);
-    }
-
-    50%, 75% {
-        transform: rotate(20deg);
-    }
-
-    75%, 100% {
-        transform: rotate(-20deg);
     }
 
 }
@@ -260,11 +257,11 @@ body>main>section {
     height: 45px;
     width: 175px;
     text-decoration: none;
-    transition: all .5s;
+    transition: all .1s;
 }
 
 #btnDownloadCv:hover {
-    transition: all .5s;
+    transition: all .1s;
     border-color: #06f;
     color: #06f;
     fill: #06f;
@@ -282,10 +279,154 @@ body>main>section {
     object-fit: cover;
 }
 
+#languageChart {
+    width: 400px;
+    position: absolute;
+    right: 50px;
+    top: 70px;
+    margin: 0;
+}
+
+#editorsChart {
+    width: 400px;
+    position: absolute;
+    right: 50px;
+    top: 400px;
+    margin: 0;
+}
+
+#languagesContainer {
+    position: relative;
+    left: 75px;
+    top: 200px;
+
+    width: 600px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px 20px;
+}
+
+#languagesContainer img {
+    width: 100px;
+}
+
 /* -----------------------------------------projects page----------------------------------------- */
 #projects {
     background-image: url('../../assets/images/background.jpg');
     object-fit: cover;
+}
+
+.projectWindow {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    float: left;
+    margin-right: 10px;
+    border: solid 10px white;
+    box-shadow: 10px 10px 0 white, -10px -10px 0 white;
+
+}
+
+.projectWindow p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    height: 40px;
+}
+
+.projectWindow div {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: black;
+    color: white;
+    visibility: hidden;
+    width: 100%;
+    height: 260px;
+    opacity: 0.7;
+}
+.projectWindow div p{
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.projectWindow:hover {
+    cursor: pointer;
+}
+
+.projectWindow:hover div {
+    visibility: visible;
+}
+
+.openGithub {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: 36px;
+    font-weight: lighter;
+    left: 150px;
+    bottom: 25px;
+}
+.openWeb{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: 36px;
+    font-weight: lighter;
+    right: 150px;
+    bottom: 25px;
+}
+
+#projectContainer {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#btnMoreProjects {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -100px;
+    margin: auto;
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    text-align: center;
+    transition: transform 150ms, box-shadow 150ms;
+}
+
+#btnMoreProjects:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
 }
 
 /* -----------------------------------------contact me page----------------------------------------- */
@@ -294,6 +435,81 @@ body>main>section {
     background-image: url('../../assets/images/footerCover.jpg');
     background-position: bottom;
     bottom: 0;
+    
+}
+
+#socialMedia {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 300px;
+    right: 360px;
+    bottom: 50px;
+}
+
+#socialMedia a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+}
+
+#address {
+    position: absolute;
+    width: 300px;
+    right: 360px;
+    top: 90px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+#address a {
+    text-decoration: none;
+}
+
+#address p {
+    margin: 0;
+    width: fit-content;
+}
+
+#address i {
+    padding-right: 10px;
+    padding-bottom: 15px;
+    font-size: 36px;
+
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: white;
+    height: 200px;
+    padding: 20px;
+    width: 400px;
+}
+
+#btnSubmit {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btnSubmit:hover {
+    background-color: #45a049;
 }
 
 /* -----------------------------------------footer----------------------------------------- */

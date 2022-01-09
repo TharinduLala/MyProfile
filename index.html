@@ -17,11 +17,11 @@
     <header>
         <img src="assets/images/wlogo.png" alt="logo">
         <ul>
-            <li> Home</li>
-            <li>About me</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact me</li>
+            <li><a style="text-decoration: none;" href="#welcome">Home</a> </li>
+            <li> <a style="text-decoration: none;" href="#aboutMe">About me</a> </li>
+            <li><a style="text-decoration: none;" href="#skills">Skills</a></li>
+            <li><a style="text-decoration: none;" href="#projects">Projects</a></li>
+            <li><a style="text-decoration: none;" href="#contact">Contact me</a></li>
         </ul>
     </header>
     <main>
@@ -60,25 +60,123 @@
         <!-- ------------------------------------------------------------------------------------------------ -->
         <section id="timeLine">
             <h1 class="headTitle">Education,Work Experience & Extra Activities</h1>
-
         </section>
         <!-- ------------------------------------------------------------------------------------------------ -->
         <section id="skills">
             <h1 class="headTitle">SKILLS</h1>
+            <h2
+                style="width: fit-content; margin: 0; color: rgb(255, 255, 255); top: 100px;left: 50px;position: relative;">
+                Technologies and Languages I have already used </h2>
+            <div id="languagesContainer">
 
+                <img src="https://img.icons8.com/color/480/000000/java-coffee-cup-logo--v1.png" />
+                <img src="https://img.icons8.com/fluency/480/000000/mysql-logo.png" />
+                <img src="https://img.icons8.com/color/480/000000/css3.png" />
+                <img src="https://img.icons8.com/color/480/000000/html-5--v1.png" />
+                <img src="https://cdn.worldvectorlogo.com/logos/hibernate.svg" />
+                <img
+                    src="https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/a3852014-1a69-42cf-a8ab-1b075596e886.png?auto=format&size=150" />
+                <img src="https://img.icons8.com/color/480/000000/figma--v1.png" />
+            </div>
+            <figure id="languageChart"><embed
+                    src="https://wakatime.com/share/@TharinduLala/6ff80262-691b-4e93-8b64-15263b3164f5.svg"></embed>
+            </figure>
+            <figure id="editorsChart"><embed
+                    src="https://wakatime.com/share/@TharinduLala/5b9959fa-0902-4365-bd63-4e54bd845330.svg"></embed>
+            </figure>
         </section>
         <!-- ------------------------------------------------------------------------------------------------ -->
         <section id="projects">
             <h1 class="headTitle">PROJECTS</h1>
+            <h2
+                style="width: fit-content; margin: 0; color: rgb(255, 255, 255); top: 100px;left: 50px;position: relative;">
+                --Some projects I have done-- </h2>
+            <p></p>
+            <section id="projectContainer">
+                <div class="projectWindow">
+                    <p>POS System</p>
+                    <img src='assets/images/posSystem.png' width='100%' height='100%'>
+                    <div>
+                       <p>
+                           my first project using layered architecture. <br>
+                           standalone application. <br>
+                           Java <br>
+                           JavaFx <br>
+                           mySql <br>
+                       </p>
+                       
+                        <a class="openWeb" href="https://www.facebook.com/kad.tl.5" target="_blank"> <i class="fas fa-external-link-alt"></i></a>
+                        <a class="openGithub" href="https://github.com/TharinduLala" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
 
+                <div class="projectWindow">
+                    <p>Room reservation System</p>
+                    <img src='assets/images/roomReservation.png' width='100%' height='100%'>
+                    <div>
+                        <a class="openWeb" href="https://www.facebook.com/kad.tl.5" target="_blank"> <i
+                                class="fas fa-external-link-alt"></i></a>
+                        <a class="openGithub" href="https://github.com/TharinduLala" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="projectWindow">
+                    <p>Parking System</p>
+                    <img src='assets/images/parkingSystem.png' width='100%' height='100%'>
+                    <div>
+                        <a class="openWeb" href="myProjects/css/assignment_06/index.html" target="_blank"> <i
+                                class="fas fa-external-link-alt"></i></a>
+                        <a class="openGithub" href="https://github.com/TharinduLala" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <form action="myProjects/css/assignment_04/index.html" target="_blank">
+                    <button role="button" id="btnMoreProjects">View more</button>
+                </form>
+
+            </section>
         </section>
         <!-- ------------------------------------------------------------------------------------------------ -->
         <section id="contact">
+            <h1 class="headTitle">CONTACT ME</h1>
+            <h2
+                style="width: fit-content; margin: 0; color: rgb(255, 255, 255); top: 0;left: 200px;position: relative;">
+                Have a question or want to work together?</h2>
+            <div class="container">
+                <form action="action_page.php">
+
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Your name..">
+
+                    <label for="email">Your Email</label>
+                    <input type="text" id="email" placeholder="Your email">
+
+                    <label for="subject">Message</label>
+                    <textarea id="subject" placeholder="Message" style="height:100px"></textarea>
+                </form>
+                <button role="button" id="btnSubmit">Submit</button>
+            </div>
+            <div id="address">
+                <p><i class="fas fa-map-marker-alt"></i>Panadura,SriLanka</p>
+                <a target="_blank" href="tel:+94715463515" style="color: white"><i
+                        class="fas fa-phone-alt"></i>+94715463515</a>
+                <a href="mailto:lalnthatharindu@gmail.com" target="_blank" style="color: white"><i
+                        class="fas fa-at"></i>lalnthatharindu@gmail.com</a>
+            </div>
+            <div id="socialMedia">
+                <a href="https://wa.me/94715463515" target="_blank"><i class="fab fa-whatsapp-square"></i></a>
+                <a href="https://telegram.me/TharinduLala" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.facebook.com/kad.tl.5" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://github.com/TharinduLala" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/tharindu-lalantha/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
         </section>
     </main>
     <footer>
         <img src="assets/images/myImage-removebg-preview.png" alt="myImage">
         <p>developed by Tharindu Lalantha</p>
+
     </footer>
 </body>
 
