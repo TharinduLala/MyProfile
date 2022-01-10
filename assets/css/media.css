@@ -1,0 +1,314 @@
+@media all and (min-width:319px) and (max-width:360px) {
+    #profileImg>img {
+        width: 250px;
+    }
+}
+
+@media all and (min-width:361px) and (max-width:426px) {
+    #profileImg>img {
+        width: 280px;
+    }
+}
+
+@media all and (min-width:320px) and (max-width:426px) {
+    header {
+        height: 40px;
+    }
+
+    header>img {
+        top: 0;
+        bottom: 0;
+        left: 5px;
+        margin: auto;
+        width: 30px;
+    }
+
+    header>img:hover {
+        width: 30px;
+    }
+
+    header>ul {
+        right: 5px;
+        top: -10px;
+        padding-top: 0;
+        padding-left: 65px;
+    }
+
+    header>ul>li {
+        padding: 0 2px 0 3px;
+        width: fit-content;
+    }
+
+    header>ul>li>a {
+        font-size: 14px;
+    }
+
+    header>ul>li>a:hover {
+        font-size: 14px;
+    }
+    body>main>section {
+        position: relative;
+        height: 812px;
+        
+    }
+    #profileImg {
+        right: 0;
+        left: 0;
+        margin: auto;
+        bottom: 170px;
+    }
+    
+    #textContent>p {
+        color: white;
+        font-family: 'Ubuntu', sans-serif;
+        z-index: 2;
+        position: relative;
+        display: block;
+        width: fit-content;
+        margin: 0;
+        text-align: center;
+    }
+
+    #textContent {
+        top: 100px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #textContent p:nth-child(1) {
+        font-size: 30px;
+        padding-bottom: 5px;
+        left: 75px;
+        top: 10px;
+    }
+
+    #textContent p:nth-child(2) {
+        font-size: 50px;
+    }
+
+    #textContent p:nth-child(3) {
+        font-size: 50px;
+    }
+
+    #textContent p:nth-child(4) {
+        font-size: 12px;
+        left: 50px;
+        padding-top: 0;
+    }
+
+    #waveHand {
+        top: 65px;
+        left: 50px;
+        width: 50px;
+    }
+
+    #socialLogo {
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 80px;
+    }
+
+    #socialLogo>a {
+        font-size: 50px;
+    }
+
+    /* /////////////////////////////////////////////////////////// */
+    #aboutMe>div:nth-child(2) {
+        bottom: 5px;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+    }
+
+    #aboutMe>div:nth-child(2) img {
+        width: 300px;
+        height: auto;
+    }
+
+    #aboutMe>div:nth-child(3) {
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 450px;
+    }
+
+    #aboutMe>div:nth-child(3) p {
+        font-size: 12px;
+    }
+
+    #btnDownloadCv {
+
+        bottom: 400px;
+        right: 0;
+        left: 0;
+        margin: auto;
+
+    }
+
+    /* //////////////////////////////////////////////////////////// */
+
+    #timeLine h1 {
+        font-size: 20px;
+    }
+
+    /* //////////////////////////////////////////////////////////// */
+    #skills h2 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 14px;
+    }
+
+    #languageChart {
+        width: 48%;
+        left: 0;
+        top: 400px;
+
+
+    }
+
+    #editorsChart {
+        width: 48%;
+        right: 0;
+        top: 400px;
+
+    }
+
+    #languagesContainer {
+        left: 0;
+        top: 150px;
+        width: 100%;
+        height: auto;
+        grid-gap: 5px 5px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #languagesContainer img {
+        width: 70px;
+    }
+
+    /* //////////////////////////////////////////////////////////// */
+    #projects h2 {
+        top: 70px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 14px;
+    }
+
+    #projectContainer {
+        left: 0;
+        right: 0;
+        margin: auto;
+        height:fit-content;
+        width: fit-content;
+        flex-direction: column;
+        top: 100px;
+
+    }
+
+    .projectWindow {
+        position: relative;
+        width: 320px;
+        height: 160px;
+        float: left;
+        margin-right: 0;
+        margin-bottom: 20px;
+        border: solid 5px white;
+        box-shadow: 5px 5px 0 white, -5px -5px 0 white;
+
+    }
+
+    .projectWindow p {
+        font-size: 14px;
+        height: fit-content;
+    }
+
+    .projectWindow div {
+        top: 15px;
+        width: 320px;
+        height: 145px;
+    }
+
+    .projectWindow div p {
+        font-size: 12px;
+    }
+
+    .openGithub {
+        font-size: 24px;
+        left: 120px;
+        bottom: 15px;
+    }
+
+    .openWeb {
+        font-size: 24px;
+        right: 120px;
+        bottom: 15px;
+    }
+    #btnMoreProjects {
+        bottom: -50px;
+    }
+
+    /* //////////////////////////////////////////////////////////// */
+
+    #contact {
+        height: 500px;
+    }
+    #contact h2 {
+        top: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 14px;
+    }
+    
+    #socialMedia {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 150px;
+        right: 10px;
+        bottom: 320px;
+    }
+    
+    #socialMedia a {
+        font-size: 30px;
+    }
+    
+    #address {
+        width: 250px;
+        right: 70px;
+        top: 100px;
+        font-size: 14px;
+    }   
+    #address i {
+        font-size: 24px; 
+    }
+    
+    input[type=text], select, textarea {
+        padding: 8px;
+    }
+    
+    .container {
+
+        top: 220px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 0;
+        width: 300px;
+    }
+    
+    #btnSubmit {
+        position: relative;
+        left: 230px;
+        height: 40px;
+    }
+    
+
+}

@@ -1,6 +1,6 @@
 body>section {
     position: relative;
-    height: 780px;
+    height: 100vh;
     z-index: 0;
 }
 

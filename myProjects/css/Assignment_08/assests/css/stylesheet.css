@@ -1,0 +1,28 @@
+body div {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 1px;
+    height: 1px;
+    border-radius: 100%;
+    border: blue 3px solid;
+    animation-name: drop;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes drop {
+    from{
+        width: 1px;
+        height: 1px;
+    }
+    to{
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+}

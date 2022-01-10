@@ -1,0 +1,55 @@
+body{
+    width: 100vw;
+    height: 700px;
+}
+body div {
+    position: relative;
+    width: 15%;
+    height: 10%;
+    border-radius: 30%;
+    background-color: blue;
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    top: 5%;
+    left: 5%;
+}
+
+@keyframes rotate {
+    0% {
+        background-color: blue;
+        top: 5%;
+        left: 5%;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        background-color: yellow;
+        top: 5%;
+        left: 70%;
+        transform: rotate(180deg);
+    }
+
+    50% {
+        background-color: red;
+        top: 80%;
+        left: 70%;
+        transform: rotate(360deg);
+    }
+
+    75% {
+        background-color: deeppink;
+        top:80%;
+        left: 5%;
+        transform: rotate(540deg);
+    }
+
+    100% {
+        background-color: green;
+        top: 5%;
+        left: 5%;
+        transform: rotate(720deg);
+    }
+
+}
