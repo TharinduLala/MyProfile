@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/000000/external-pos-terminal-business-vitaliy-gorbachev-lineal-vitaly-gorbachev.png" rel="icon">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+    <title>New Order</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #4d546d;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="bi bi-cart4"></i>
+                    POS System
+                </a>
+                <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse"
+                    type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">New Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index2.html">Customer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index3.html">Items</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index4.html">Orders</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid">
+        <h1><i class="bi bi-cart-plus"></i>New Order</h1>
+        <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#addCustomer">
+            Add new customer
+        </button>
+        <div class="modal fade" id="addCustomer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="addCustomerLabel">Add customer</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="cId" placeholder="Customer Id">
+                            <label for="cId">Customer Id</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="cName" placeholder="Customer name">
+                            <label for="cName">Customer name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="cAddress" placeholder="Customer Address">
+                            <label for="cAddress">Address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="cSalary" placeholder="Customer salary">
+                            <label for="cSalary">Salary</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-warning">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="row m-1 justify-content-around">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 border p-2 mt-3 ">
+
+                <form class="row g-2 ">
+                    <div class="bg-success text-center  text-white  card-header ">
+                        <h5>Invoice Details</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="orderId">Order Id</label>
+                        <input class="form-control form-control-sm" id="orderId" type="text">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label" for="orderDate">Order Date</label>
+                        <input class="form-control form-control-sm" id="orderDate" type="date">
+                    </div>
+
+                    <div class="col-md-6 col-6">
+                        <label class="form-label" for="customerId">Customer Id</label>
+                        <input aria-describedby="button_search" class="form-control form-control-sm" id="customerId"
+                            type="text">
+                        <button class="btn-sm btn-primary m-1" id="button_search" type="button">Search</button>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="customerName">Customer Name</label>
+                        <input class="form-control form-control-sm" id="customerName" type="text">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="customerAddress">Address</label>
+                        <input class="form-control form-control-sm" id="customerAddress" type="text">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="customerSalary">Salary</label>
+                        <input class="form-control form-control-sm" id="customerSalary" type="text">
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 border p-2 mt-3 ">
+
+                <form class="row g-2 ">
+                    <div class="bg-success text-center  text-white  card-header ">
+                        <h5>Item Select</h5>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="item">Item</label>
+                        <select class="form-select form-select-sm" id="item">
+                            <option>select item...</option>
+                            <option>Item 01</option>
+                            <option>Item 02</option>
+                        </select>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label" for="itemCode">Item Code</label>
+                        <input class="form-control form-control-sm" id="itemCode" type="text">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label" for="itemDescription">Description</label>
+                        <input class="form-control form-control-sm" id="itemDescription" type="text">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="unitPrice">Unit Price</label>
+                        <input class="form-control form-control-sm" id="unitPrice" type="text">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="qtyOnH">QtyOnH</label>
+                        <input class="form-control form-control-sm" id="qtyOnH" type="number">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="orderQty">Order Qty</label>
+                        <input class="form-control form-control-sm" id="orderQty" type="number">
+                    </div>
+                </form>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-secondary mt-3" type="button">Add Item</button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 border p-2 overflow-scroll mt-3 " style="height: 320px">
+
+                <table class="table">
+                    <thead class="table-info ">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                           
+                            <td>Nadu 5kg</td>
+                            <td>600</td>
+                            <td>2</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr>
+                            
+                            <td>soap</td>
+                            <td>75</td>
+                            <td>1</td>
+                            <td>75</td>
+                        </tr>
+                        <tr>
+                            
+                            <td>White Sugar</td>
+                            <td>140</td>
+                            <td>1</td>
+                            <td>140</td>
+                        </tr>
+                        <tr>
+                            
+                            <td>Milk powder 400g</td>
+                            <td>600</td>
+                            <td>2</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr>
+                            
+                            <td>coconut oil 1 liter</td>
+                            <td>280</td>
+                            <td>1</td>
+                            <td>280</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 border p-2 mt-3 ">
+                <div class="row g-3 ">
+                    <div class="col-md-4">
+                        <label class="form-label" for="netTotal">Net Total</label>
+                        <input class="form-control form-control-sm" id="netTotal" type="number">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="discount">Discount</label>
+                        <input class="form-control form-control-sm" id="discount" type="number">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="subTotal">Sub Total</label>
+                        <input class="form-control form-control-sm" id="subTotal" type="number">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="cash">Cash</label>
+                        <input class="form-control form-control-sm" id="cash" type="number">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="balance">Balance</label>
+                        <input class="form-control form-control-sm" id="balance" type="number">
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-lg btn-success mt-4 col-12" type="button">Proceed</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

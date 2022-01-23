@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/000000/external-pos-terminal-business-vitaliy-gorbachev-lineal-vitaly-gorbachev.png" rel="icon">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <title>Customers</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+</head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #4d546d;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <i class="bi bi-cart4"></i>
+                        POS System
+                    </a>
+                    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                        class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse"
+                        type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">New Order</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index2.html">Customer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index3.html">Items</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index4.html">Orders</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <main class="container-fluid">
+
+        <section class="container-fluid justify-content-center">
+            <h1><i class="bi bi-people-fill"></i>Customers</h1>
+            <button type="button" class="btn btn-primary btn-lg mb-2" data-bs-toggle="modal" data-bs-target="#addCustomer">
+                Add new customer
+            </button>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                <form class="row align-items-center">
+                    <div class="input-group mb-2 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                        <input type="text" class="form-control" placeholder="Customer Id" aria-label="Customer Id" aria-describedby="button_search">
+                        <button class="btn btn-primary" type="button" id="button_search">Search</button>
+                    </div>
+                    <div class="form-floating mb-2 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                        <input type="text" readonly class="form-control" id="cusName" placeholder="Customer name">
+                        <label for="cusName">Customer name</label>
+                    </div>
+                    <div class="form-floating mb-2 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                        <input type="text" readonly class="form-control" id="cusAddress" placeholder="Customer address">
+                        <label for="cusAddress">Address</label>
+                    </div>
+                    <div class="form-floating mb-2 col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                        <input type="number" readonly class="form-control" id="cusSalary" placeholder="Customer salary">
+                        <label for="cusSalary">Salary</label>
+                    </div>
+                </form>
+
+                <div class="btn-group "  aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-warning btn" data-bs-toggle="modal" data-bs-target="#updateCustomer">
+                        Update
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm" >
+                        Remove
+                    </button>
+                </div>
+
+                <div class="modal fade" id="addCustomer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="addCustomerLabel">Add customer</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="cId" placeholder="Customer Id">
+                                    <label for="cId">Customer Id</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="cName" placeholder="Customer name">
+                                    <label for="cName">Customer name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="cAddress" placeholder="Customer Address">
+                                    <label for="cAddress">Address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="cSalary" placeholder="Customer salary">
+                                    <label for="cSalary">Salary</label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-warning">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="updateCustomer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="updateCustomerLabel">Update customer</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="customerId" placeholder="Customer id">
+                                    <label for="customerId">Customer Id</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="customerName" placeholder="Customer name">
+                                    <label for="customerName">Customer name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="customerAddress" placeholder="Customer address">
+                                    <label for="customerAddress">Address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="customerSalary" placeholder="Customer salary">
+                                    <label for="customerSalary">Salary</label>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-warning">Update</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid overflow-scroll mt-5 " style="height: 25vh">
+                <table class="table">
+                    <thead class="table-dark ">
+                    <tr>
+                        <th scope="col">Customer Id</th>
+                        <th scope="col">Customer Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>C001</td>
+                        <td>Kamal</td>
+                        <td>Panadura</td>
+                        <td>5000</td>
+                    </tr>
+                    <tr>
+                        <td>C002</td>
+                        <td>Amal</td>
+                        <td>Horana</td>
+                        <td>8000</td>
+                    </tr>
+                    <tr>
+                        <td>C003</td>
+                        <td>Saman</td>
+                        <td>Panadura</td>
+                        <td>10000</td>
+                    </tr>
+                    <tr>
+                        <td>C004</td>
+                        <td>Tharindu</td>
+                        <td>Panadura</td>
+                        <td>7000</td>
+                    </tr>
+                    <tr>
+                        <td>C005</td>
+                        <td>Bandara</td>
+                        <td>Colombo</td>
+                        <td>15000</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
