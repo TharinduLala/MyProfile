@@ -54,7 +54,7 @@
 
     <script>
         var idArray = [$("#one"), $("#two"), $("#three"), $("#four"), $("#five"), $("#six")];
-        var colorArray = ["https://www.animatedimages.org/data/media/1635/animated-walking-image-0055.gif",
+        var imageArray = ["https://www.animatedimages.org/data/media/1635/animated-walking-image-0055.gif",
             "https://www.animatedimages.org/data/media/1635/animated-walking-image-0012.gif",
             "https://www.animatedimages.org/data/media/1635/animated-walking-image-0044.gif",
             "https://www.animatedimages.org/data/media/1635/animated-walking-image-0033.gif",
@@ -62,17 +62,17 @@
             "https://www.animatedimages.org/data/media/1635/animated-walking-image-0019.gif"]
 
         function makeArray() {
-            var tempColor=new Array();
-            tempColor.push(colorArray[5]);
+            var tempImages=new Array();
+            tempImages.push(imageArray[5]);
             for (let i = 0; i <idArray.length-1 ; i++) {
-                tempColor.push(colorArray[i]);
+                tempImages.push(imageArray[i]);
             }
-            colorArray=tempColor;
+            imageArray=tempImages;
         }
         function assign() {
             makeArray();
             for (let i = 0; i <idArray.length ; i++) {
-                idArray[i].attr("src",colorArray[i]);
+                idArray[i].attr("src",imageArray[i]);
             }
         }
         setInterval(assign,1000);
